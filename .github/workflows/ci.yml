@@ -20,10 +20,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Use Node.js ${{ matrix.node-version }}
+    - name: Use Node.js ${{ matrix.node-version }}       
       uses: actions/setup-node@v3
       with:
-        node-version: ${{ matrix.node-version }}
+        node-version: ${{ matrix.node-version }}        
+        working-directory: ./src/server
         cache: 'npm'
     - name: Install and Build
       working-directory: ./src/server
