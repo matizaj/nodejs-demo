@@ -26,4 +26,4 @@ jobs:
     - name: Install and Build
       working-directory: ./src
       run: |
-          echo dupa
+          ls
