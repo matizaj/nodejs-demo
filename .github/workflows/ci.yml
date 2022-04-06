@@ -26,11 +26,11 @@ jobs:
         node-version: ${{ matrix.node-version }}        
         cache-dependency-path: ./src/server
         cache: 'npm'
-    - name: Install and Build
+    - name: Install modules
       working-directory: ./src/server
       run: |
           npm install
-    - name: Install and Build    
+    - name: Build    
       working-directory: ./src/server
       run: |
-          npm start
+          npm run start
