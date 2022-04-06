@@ -24,6 +24,8 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - name: Install and Build
-      working-directory: ./src
       run: |
-          ls
+          npm install
+    - name: Install and Build
+      run: |
+          npm start
