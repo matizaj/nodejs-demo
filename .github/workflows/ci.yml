@@ -24,7 +24,7 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}        
-        working-directory: ./src/server
+        cache-dependency-path: ./src/server
         cache: 'npm'
     - name: Install and Build
       working-directory: ./src/server
